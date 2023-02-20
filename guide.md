@@ -4,9 +4,9 @@
 
 Welcome to the official CSESoc Edu guide on setting up a local development environment using WSL2!
 
-By following this guide you will learn how to create and work seamlessly on a Linux environement using your Windows computer, without having to deal with the hassle that is VLAB and SSH.
+By following this guide you will learn how to create and work seamlessly on a Linux environment using your Windows computer, without having to deal with the hassle that is VLAB and SSH.
 
-> Fair warning, if you are currently a **COMP1511** student, and you aren't too familiar with Linux or developing locally, it is strongly recommended that you continue to use `VLAB` or `VSCode SSH FS` for atleast the first few weeks, until you feel comfortable, before seeking out a more advanced method for developing locally.
+> Fair warning, if you are currently a **COMP1511** student, and you aren't too familiar with Linux or developing locally, it is strongly recommended that you continue to use `VLAB` or `VSCode SSH FS` for at least the first few weeks, until you feel comfortable, before seeking out a more advanced method for developing locally.
 
 ## What's the point? 🤔
 
@@ -22,7 +22,7 @@ Fortunately WSL allows you to create a *seamless* local setup, which can even be
 
 ## So what is this WSL2? ❓
 
-**Windows Subsytem for Linux** (WSL) is a feature of Windows which allows developers to run a Linux environment, without the hassle of a whole virtual machine or dual booting. 
+**Windows Subsystem for Linux** (WSL) is a feature of Windows which allows developers to run a Linux environment, without the hassle of a whole virtual machine or dual booting. 
 
 In simple terms, it gives you a Linux terminal on your Windows machine without too much hassle.
 
@@ -128,11 +128,11 @@ sudo apt update && sudo apt upgrade
 
 ## Installing VSCode and the WSL extension 💻
 
-The recommended IDE here at UNSW is Microsoft's Visual Studio Code (VSCode), thanks to it's reliability, efficiency and large range of extensions.
+The recommended IDE here at UNSW is Microsoft's Visual Studio Code (VSCode), thanks to its reliability, efficiency and large range of extensions.
 
 Firstly, back on **Windows**, visit the [VSCode install page](https://code.visualstudio.com/download) and download & run the installer.
 
-Once the installer has finished open up VSCode, if you did not create a shortcut during the install, you can open VSCode by pressing **Start** and searching for **Visual Studio Code**.
+Once the installer has finished, open up VSCode, if you did not create a shortcut during the install, you can open VSCode by pressing **Start** and searching for **Visual Studio Code**.
 
 Once VSCode has opened, you will need to download the WSL extension, to do this, click on the extensions tab on the left, then search for **Remote Development** and click install on the first result, which should have more than 3 million downloads.
 
@@ -237,5 +237,5 @@ Right now your Ubuntu terminal looks pretty boring, so I recommend heading over 
 
 Additionally, how can we make this WSL installation communicate with our CSE computer for us? You can find out all about that in the [SSH FS mounting guide](https://abiram.me/cse-sshfs) by Abiram. While it shares the same name as the VSCode extension, SSH FS mounting is a more advanced method, which fixes VSCode's issue where more powerful extensions won't work when using VSCode SSH FS.
 
-Thanks for reading this guide, I hope it was useful, if you find any errors or have any recommendations, please email me at <a href="mailto:liam.smith@csesoc.org.au">liam.smith@csesoc.org.au</a>.
+Thanks for reading this guide, I hope it was useful. If you find any errors or have any recommendations, please email me at <a href="mailto:liam.smith@csesoc.org.au">liam.smith@csesoc.org.au</a>.
 
