@@ -237,5 +237,5 @@ Right now your Ubuntu terminal looks pretty boring, so I recommend heading over 
 
 Additionally, how can we make this WSL installation communicate with our CSE computer for us? You can find out all about that in the [SSH FS mounting guide](https://abiram.me/cse-sshfs) by Abiram. While it shares the same name as the VSCode extension, SSH FS mounting is a more advanced method, which fixes VSCode's issue where more powerful extensions won't work when using VSCode SSH FS.
 
-Thanks for reading this guide, I hope it was useful. If you find any errors or have any recommendations, please email me at <a href="mailto:liam.smith@csesoc.org.au">liam.smith@csesoc.org.au</a>.
+Thanks for reading this guide, I hope it was useful. If you find or experience any errors, or just have any recommendations, please email me at <a href="mailto:liam.smith@csesoc.org.au">liam.smith@csesoc.org.au</a>.
 
