@@ -1,9 +1,3 @@
-<style>
-body .main-container {
-    max-width: 940px;
-}
-</style>
-
 # Home computing at CSE using WSL2 🏠💻
 
 ### Firstly, huge shoutout to William Huynh, who wrote a [fantastic guide for WSL2](https://github.com/WilliamHuynh5/unsw-cse-home-computing-wsl2), which this guide adds on to. 🤩
