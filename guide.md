@@ -12,7 +12,7 @@ Welcome to the official CSESoc Edu guide on setting up a local development envir
 
 By following this guide you will learn how to create and work seamlessly on a Linux environement using your Windows computer, without having to deal with the hassle that is VLAB and SSH.
 
-> Fair warning, if you are currently a **COMP1511** student, and you aren't too familiar with Linux or developing locally, it is strongly recommended that you continue to use `VLAB` or `Vscode SSH FS` for atleast the first few weeks, until you feel comfortable, before seeking out a more advanced method for developing locally.
+> Fair warning, if you are currently a **COMP1511** student, and you aren't too familiar with Linux or developing locally, it is strongly recommended that you continue to use `VLAB` or `VSCode SSH FS` for atleast the first few weeks, until you feel comfortable, before seeking out a more advanced method for developing locally.
 
 ## What's the point? 🤔
 
@@ -44,7 +44,7 @@ First you will need to open task manager by right clicking on the windows start 
 
 Next go to the **Performance** tab in task manager, and look for **Virtualisation**.
 
-![Task manager performance tab with Virtualisation circled](img/Virtualisation-check-task-manager.jpg)
+<img src="img/Virtualisation-check-task-manager.jpg" width=940px alt="Task manager performance tab with Virtualisation circled">
 
 If it says Enabled, you can skip to the [next step](#installing-wsl), however if it's disabled, we need to enable it in our computer's BIOS menu.
 
@@ -52,19 +52,19 @@ If it says Enabled, you can skip to the [next step](#installing-wsl), however if
 
 To access our BIOS menu, firstly open settings, then search for **Advanced startup**. Depending on your version of windows the result may be named slightly different, but it should be similar to **Change advanced start-up options**. Click on that and then click on **Restart now** next to **Advanced startup**.
 
-![Settings showing advanced startup location](img/advanced-startup.jpg)
+<img src="img/advanced-startup.jpg" width=940px alt="Settings showing advanced startup location">
 
 Once your computer has restarted, you will be met with a menu, first click on troubleshoot.
 
-![Click on troubleshoot](img/windows-bios-nav-1.jpg)
+<img src="img/windows-bios-nav-1.jpg" width=940px alt="Click on troubleshoot">
 
 Then Advanced options
 
-![Click on Advanced options](img/windows-bios-nav-2.jpg)
+<img src="img/windows-bios-nav-2.jpg" width=940px alt="Click on Advanced options">
 
 Then click on UEFI Firmware Settings
 
-![Click on UEFI Firmware Settings](img/windows-bios-nav-3.jpg)
+<img src="img/windows-bios-nav-3.jpg" width=940px alt="Click on UEFI Firmware Settings">
 
 Your computer will now restart again, and will load into your computer's BIOS menu. This is where explaining how to enable virtualisation gets tricky, as every different motherboard manufacturer uses a different BIOS menu, and a lot of the time, the same manufacturer will also use different BIOS menus. So in general, you will be looking for Advanced settings > CPU settings > Virtualisation.
 
@@ -72,19 +72,19 @@ On my BIOS the process is like this
 
 First enter Advanced Mode either by clicking the button or pressing F7
 
-![Click on Advanced Mode](img/windows-bios-nav-4.jpg)
+<img src="img/windows-bios-nav-4.jpg" width=940px alt="Click on Advanced Mode">
 
 Find your CPU settings, mine were in the Advanced tab, in CPU Configuration.
 
-![Open CPU Settings](img/windows-bios-nav-5.jpg)
+<img src="img/windows-bios-nav-5.jpg" width=940px alt="Open CPU Settings">
 
 Then find the option for virtualisation, mine is Intel Virtualization technology as I have an intel cpu, but this could also be called AMD Virtualization, Intel VT-x, AMD-V, SVM, Vanderpool, Intel VT-d or AMD IOMMU.
 
-![Enable virtualisation](img/windows-bios-nav-6.jpg)
+<img src="img/windows-bios-nav-6.jpg" width=940px alt="Enable virtualisation">
 
 Finally exit out of your BIOS, make sure you chose whatever option saves your changes.
 
-![Exit BIOS](img/windows-bios-nav-7.jpg)
+<img src="img/windows-bios-nav-7.jpg" width=940px alt="Exit BIOS">
 
 That is thankfully the most complicated step of installing WSL, and from here on out everything is smooth sailing.
 
@@ -116,7 +116,7 @@ You can launch your **WSL2** installation by opening **Start** on Windows and se
 
 Once you've launched it and configured a password, you should be greeted with something similar to this.
 
-![WSL example](img/WSL-install-example.jpg)
+<img src="img/WSL-install-example.jpg" width=940px alt="Freshly installed WSL">
 
 # Configuring WSL2 🔧
 
@@ -142,7 +142,7 @@ Once the installer has finished open up VSCode, if you did not create a shortcut
 
 Once VSCode has opened, you will need to download the WSL extension, to do this, click on the extensions tab on the left, then search for **Remote Development** and click install on the first result, which should have more than 3 million downloads.
 
-<img src="img/RemoteDevInstall.gif" width=951px alt="Install Remote Development">
+<img src="img/RemoteDevInstall.gif" width=940px alt="Install Remote Development">
 
 And that's all, to test it out, simply reopen Ubuntu, and in the terminal, enter this command:
 
@@ -152,7 +152,7 @@ code .
 
 The first time you run the command Ubuntu will install a VSCode server, however whenever you open it again, VSCode will open almost immediately.
 
-![running code .](img/wsl%20code%20command.jpg)
+<img src="img/wsl%20code%20command.jpg" width=940px alt="running code .">
 
 > To open a specific file in VSCode, you can run: `code myfile.txt`
 
