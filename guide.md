@@ -4,6 +4,8 @@
 
 Welcome to the official CSESoc Edu guide on setting up a local development environment using WSL2!
 
+This guide is also available as a video 📷, which you may find easier to follow.
+
 By following this guide you will learn how to create and work seamlessly on a Linux environment using your Windows computer, without having to deal with the hassle that is VLAB and SSH.
 
 > Fair warning, if you are currently a **COMP1511** student, and you aren't too familiar with Linux or developing locally, it is strongly recommended that you continue to use `VLAB` or `VSCode SSH FS` for at least the first few weeks, until you feel comfortable, before seeking out a more advanced method for developing locally.
@@ -92,11 +94,8 @@ That is thankfully the most complicated step of installing WSL, and from here on
 ```
 wsl --install
 ```
-5. Wait for it to finish installing, and then just like that, you have a minimal WSL install on your computer. You can confirm your installation by typing the following command and pressing **Enter**
-
-```
-wsl -l -v
-```
+5. Wait for it to finish installing, you will now need to restart your computer.
+6. Once your computer has rebooted, a terminal will appear which will say it is installing ubuntu, this will take a few minutes, and then ubuntu will launch.
 
 > If your installation was unsuccessful for any reason, try it again from the first step
 
@@ -158,24 +157,17 @@ Here we will learn to install some languages and tools that are used in a majori
 ### C - **gcc**, **gdb** & **valgrind** ⚔️
 > (COMP1511, COMP1521, COMP2521)
 
-1. Install **gcc** and **gdb**
+1. Install **gcc**, **gdb** and **valgrind**
 ```
-sudo apt install gcc
+sudo apt install gcc gdb valgrind
 ```
-2. Confirm the installation of **gcc** & **gdb**
+2. Confirm the installation
 ```
 gcc --version
 gdb --version
-```
-3. Install **valgrind** 
-```
-sudo apt install valgrind
-```
-4. Confirm the installation of **valgrind** 
-```
 valgrind --version
 ```
-5. While not strictly necessary, I highly recommend installing the C/C++ Language Pack VSCode extension for Intellisense features.
+3. While not strictly necessary, I highly recommend installing the C/C++ Language Pack VSCode extension for Intellisense features.
    
 ## JavaScript & TypeScript - **nodeJS** 🌐
 > (COMP1531, COMP6080)
@@ -188,16 +180,22 @@ sudo apt-get install curl
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
-3. Confirm the installation of **nvm**. It should output `"nvm"` in the terminal. If you received `command not found`, start again from **Step 1**.
+3. Once you have curled **nvm** you will need to restart your bash shell, you can do this by entering the following command and pressing **Enter**
+   
+```
+exec bash
+```
+
+4. Confirm the installation of **nvm**. It should output `"nvm"` in the terminal. If you received `command not found`, start again from **Step 1**.
 ```
 command -v nvm
 ```
-4. Install **nodeJS**
+5. Install **nodeJS**
 ```
 nvm install --lts
 nvm install node
 ```
-5. Confirm the installation of **nodeJS**
+6. Confirm the installation of **nodeJS**
 ```
 node --version
 npm --version
@@ -233,7 +231,7 @@ pip -V
 
 Congratulations, you've made it to the end of this WSL Guide, but there is more you can do! 
 
-Right now your Ubuntu terminal looks pretty boring, so I recommend heading over to our "Spicing up your shell using ZSH ✨" guide, written by the one and only William Huynh, so you can level up your setup from lame boring bash, to epic and cool zsh.
+Right now your Ubuntu terminal looks pretty boring, so I recommend heading over to our "Spicing up your shell using ZSH ✨" guide, written by the one and only William Huynh, so you can level up your setup from lame boring bash, to cool and epic zsh.
 
 Additionally, how can we make this WSL installation communicate with our CSE computer for us? You can find out all about that in the [SSH FS mounting guide](https://abiram.me/cse-sshfs) by Abiram. While it shares the same name as the VSCode extension, SSH FS mounting is a more advanced method, which fixes VSCode's issue where more powerful extensions won't work when using VSCode SSH FS.
 
