@@ -4,7 +4,7 @@
 
 Welcome to the official CSESoc Edu guide on setting up a local development environment using WSL2!
 
-This guide is also available as a video 📷, which you may find easier to follow.
+This guide is also available [as a video](https://www.youtube.com/watch?v=uWZ_zGDV3rs) 📷, which you may find easier to follow.
 
 By following this guide you will learn how to create and work seamlessly on a Linux environment using your Windows computer, without having to deal with the hassle that is VLAB and SSH.
 
